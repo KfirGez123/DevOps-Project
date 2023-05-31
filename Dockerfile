@@ -10,7 +10,7 @@ COPY . .
 RUN mvn package -DskipTests
 
 # Use Tomcat image to deploy the war
-FROM tomcat:8.0
+FROM tomcat:9.0
 
 # Copy the war file to Tomcat webapps directory
 COPY --from=builder /app/target/my-jsp-app.war /usr/local/tomcat/webapps/
