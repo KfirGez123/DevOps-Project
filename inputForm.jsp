@@ -42,7 +42,7 @@ input[type=submit]:hover {
 </style>
 </head>
 <body>
-    <form action="welcome.jsp" method="get">
+    <form action="welcomeMessage.jsp" method="get">
         <label for="name">Enter your name:</label><br>
         <input type="text" id="name" name="name"><br>
         <input type="submit" value="Submit">
